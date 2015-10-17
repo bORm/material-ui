@@ -216,7 +216,7 @@ const DropDownMenu = React.createClass({
           this.state.open && styles.rootWhenOpen,
           this.props.style)} >
 
-          <ClearFix style={this.mergeStyles(styles.control)} onTouchTap={this._onControlClick}>
+          <ClearFix style={this.mergeStyles(styles.control)} onTouchTap={this._onControlClick} onClick={this._onControlClick}>
             <Paper style={this.mergeStyles(styles.controlBg)} zDepth={0} />
             <div style={this.prepareStyles(styles.label, this.state.open && styles.labelWhenOpen, this.props.labelStyle)}>
               {displayValue}
